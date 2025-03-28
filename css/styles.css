@@ -8,6 +8,8 @@ footer {
     background-color: #e7f7f786;
     color: #000;
     position:fixed;
+   
+    /* slam it to bottom and center*/
     bottom:0;
     left:0;
     right:0;
