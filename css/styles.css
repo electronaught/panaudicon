@@ -1,9 +1,8 @@
-p {
+body {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
 footer {
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 5px;
     background-color: #e7f7f786;
