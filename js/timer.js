@@ -19,7 +19,6 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    console.log(Date.parse(deadline))
     var remaining = Date.parse(deadline)-Date.now(),
         display = document.querySelector('#countdown');
     startTimer(remaining, display);
