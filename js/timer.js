@@ -1,4 +1,4 @@
-const deadline = 'May 1 2025 23:59:59 GMT+0200';
+const deadline = 'April 30 2025 23:59:59 GMT-0700';
 
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
