@@ -22,9 +22,10 @@ function startTimer(duration, display) {
 }
 
 function init(display){
+    var loop = 0;
     var id = setInterval(function () {
         
-        if (loop>20){
+        if (loop>15){
             clearInterval(id)
         }
 
@@ -34,15 +35,15 @@ function init(display){
         rsec = rsec < 10 ? "0" + rsec : rsec;
 
         display.textContent = rmin + ":" + rsec;
-       
+       loop++;
     }, 100);
 }
 
 
 
 window.onload = function () {
-    var remaining = Date.parse(deadline)-Date.now(),
-        display = document.querySelector('#countdown');
+    display = document.querySelector('#countdown');
     init(display);
+    var remaining = Date.parse(deadline)-Date.now();
     startTimer(remaining, display);
 };
