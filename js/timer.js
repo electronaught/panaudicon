@@ -3,19 +3,18 @@ const deadline = 'April 30 2025 23:59:59 GMT-0700';
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
- 
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+       
+        minutes = Math.floor(timer / 60000);
+        seconds = Math.floor((timer % 60000)/1000);
 
         display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
+        console.log(seconds)
+         if (--timer > 0) {
+              timer = Date.parse(deadline)-Date.now();
+          }    
+        
     }, 1000);
+ 
 }
 
 window.onload = function () {
