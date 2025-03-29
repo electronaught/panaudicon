@@ -8,7 +8,7 @@ function startTimer(duration, display) {
         seconds = Math.floor((timer % 60000)/1000);
 
         display.textContent = minutes + ":" + seconds;
-        console.log(seconds)
+        
          if (--timer > 0) {
               timer = Date.parse(deadline)-Date.now();
           }    
