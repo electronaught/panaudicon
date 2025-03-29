@@ -7,8 +7,12 @@ function startTimer(duration, display) {
         minutes = Math.floor(timer / 60000);
         seconds = Math.floor((timer % 60000)/1000);
 
-        display.textContent = minutes + ":" + seconds;
+        //zero pad digits below 10
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
         
+        display.textContent = minutes + ":" + seconds;
+
          if (--timer > 0) {
               timer = Date.parse(deadline)-Date.now();
           }    
