@@ -22,26 +22,20 @@ function startTimer(duration, display) {
 }
 
 function init(display){
-    var loop=0;
-    var dwell=30;
     var id = setInterval(function () {
         
         if (loop>20){
             clearInterval(id)
         }
 
-       
         var rsec=Math.floor(Math.random()*60)
         var rmin=Math.floor(Math.random()*90000)+10000
+
         rsec = rsec < 10 ? "0" + rsec : rsec;
 
         display.textContent = rmin + ":" + rsec;
-
-        loop++
        
-    }, 100
-);
-  
+    }, 100);
 }
 
 
