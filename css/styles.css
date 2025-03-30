@@ -52,11 +52,11 @@ footer {
 
 .contact-form-container {
     background-color: #2b2b2b;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    max-width: 300px;
+    width: 60%;
 }
 
 h2 {
@@ -95,3 +95,9 @@ textarea {
     display: none; /* Hidden by default */
 }
 
+details {
+  margin: 400 auto; 
+  padding: 1rem;
+  position: relative;
+  top: 500px;
+}

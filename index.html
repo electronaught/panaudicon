@@ -48,7 +48,7 @@
 
 
    <details>
-      <summary> Sign Up </summary>
+      <summary> Touch</summary>
      
       <div class="contact-form-container">
        <form id="contactForm" >
@@ -56,14 +56,14 @@
                <label for="name">Name</label>
                <input type="text" id="name" 
                       name="Name" 
-                      placeholder="Your Name" required>
+                      placeholder="Name" required>
                <span class="error-message" id="nameError"></span>
            </div>
            <div class="form-group">
                <label for="email">Email</label>
                <input type="email" id="email" 
                       name="Email" 
-                      placeholder="Your Email" required>
+                      placeholder="Email" required>
                <span class="error-message" id="emailError"></span>
            </div>     
            <button type="submit" 
@@ -80,11 +80,11 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-              alert("Received. We will be in touch.")
+              alert("Received.")
               console.log('Success!', response)
             })
             .catch(error => {
-              alert("Something went wrong.  Send us an email at panaudicon@gmail.com")
+              alert("Error.  Contact panaudicon@gmail.com")
               console.error('Error!', error.message)
             })
           form.reset();
