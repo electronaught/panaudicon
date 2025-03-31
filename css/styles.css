@@ -96,8 +96,9 @@ textarea {
 }
 
 details {
-  margin: 400 auto; 
-  padding: 1rem;
   position: relative;
-  top: 500px;
+  margin: 400 auto; 
+  padding: 2pt;
+ 
+  top: 80px;
 }
