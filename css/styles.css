@@ -96,9 +96,15 @@ textarea {
 }
 
 details {
-  position: relative;
-  margin: 400 auto; 
+  position: absolute;
+  margin: 100 auto; 
   padding: 2pt;
- 
-  top: 80px;
+  width:400px;
+  top: 230px;
+  /* bottom:20px;  */
+}
+
+#pedal{
+  margin:auto;
+  width: 50%;
 }
