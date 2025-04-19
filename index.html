@@ -15,16 +15,16 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <script src="js/main.js" type="text/javascript"></script>
-  
-
-    <title>Panaudicon</title>
-    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
-    <link rel="shortcut icon" href="/img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-    <link rel="manifest" href="/img/site.webmanifest" />
+      <script src="js/main.js" type="text/javascript"></script>
     
+
+      <title>Panaudicon</title>
+      <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+      <link rel="shortcut icon" href="/img/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+      <link rel="manifest" href="/img/site.webmanifest" />
+      
   </head>
 
 
@@ -88,25 +88,25 @@
           </button>
        </form>
 
-       <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwlVmL5hQHSH0bOeX1YgLgBBGYurmBx-mnRpc_rlFM44Pvhnwi7nfDUV46jbwTDUX7GoA/exec'
-        const form = document.getElementById('contactForm')
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-              alert("Received.")
-              console.log('Success!', response)
-            })
-            .catch(error => {
-              alert("Error.  Contact panaudicon@gmail.com")
-              console.error('Error!', error.message)
-            })
-          form.reset();
-         
-        })
-      </script>
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbwlVmL5hQHSH0bOeX1YgLgBBGYurmBx-mnRpc_rlFM44Pvhnwi7nfDUV46jbwTDUX7GoA/exec'
+          const form = document.getElementById('contactForm')
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => {
+                alert("Received.")
+                console.log('Success!', response)
+              })
+              .catch(error => {
+                alert("Error.  Contact panaudicon@gmail.com")
+                console.error('Error!', error.message)
+              })
+            form.reset();
+          
+          })
+        </script>
 
    </div>
    </details>
